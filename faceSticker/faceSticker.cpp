@@ -61,7 +61,6 @@ void Sticker::load(const string& image, const string& mask)
     string mask_path = "C:/Users/ayoung/Desktop/sticker/" + mask;
     sticker = imread(image_path);
     Mask = imread(mask_path, cv::IMREAD_GRAYSCALE);
-    //cv::imshow("temp", sticker);
 }
 int Sticker::get_width(const float x1, const float x2)
 {
